@@ -1,7 +1,7 @@
 
 # 🔏 file_cryptor  
   
-📁 FileCryptor is for encryption and decryption files.
+📁 FileCryptor is for encryption and decryption files. (PDF, MP3, MP4, PNG, ...)
   
 ## Getting Started
 ### ⚙️Installation
