@@ -9,9 +9,9 @@ void main() async {
     dir: "example",
   );
 
-  File encryptedFile = await fileCryptor.encrypt(inputFile: "video.mp4", outputFile: "video.aes");
+  File encryptedFile = await fileCryptor.encrypt(inputFile: "example.txt", outputFile: "example.aes");
   print(encryptedFile.absolute);
 
-  File decryptedFile = await fileCryptor.decrypt(inputFile: "video.aes", outputFile: "video.mp4");
+  File decryptedFile = await fileCryptor.decrypt(inputFile: "example.aes", outputFile: "example.txt");
   print(decryptedFile.absolute);
 }
