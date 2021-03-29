@@ -7,11 +7,14 @@ void main() async {
     key: "Your 32 bit key.................",
     iv: 16,
     dir: "example",
+    // useCompress: true,
   );
 
-  File encryptedFile = await fileCryptor.encrypt(inputFile: "example.txt", outputFile: "example.aes");
+  File encryptedFile =
+      await fileCryptor.encrypt(inputFile: "file.txt", outputFile: "file.aes");
   print(encryptedFile.absolute);
 
-  File decryptedFile = await fileCryptor.decrypt(inputFile: "example.aes", outputFile: "example.txt");
+  File decryptedFile =
+      await fileCryptor.decrypt(inputFile: "file.aes", outputFile: "file.txt");
   print(decryptedFile.absolute);
 }

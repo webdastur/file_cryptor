@@ -40,8 +40,10 @@ void main() {
   test(
     "File encryption",
     () async {
-      var _encryptedFile = await fileCryptor.encrypt(inputFile: "example.txt", outputFile: "res\\example.aes");
-      expect(_encryptedFile.readAsBytesSync(), File("test\\example.aes").readAsBytesSync());
+      var _encryptedFile = await fileCryptor.encrypt(
+          inputFile: "example.txt", outputFile: "res\\example.aes");
+      expect(_encryptedFile.readAsBytesSync(),
+          File("test\\example.aes").readAsBytesSync());
       await _encryptedFile.delete();
     },
   );
@@ -49,8 +51,10 @@ void main() {
   test(
     "File decryption",
     () async {
-      var _decryptedFile = await fileCryptor.decrypt(inputFile: "example.aes", outputFile: "res\\example.txt");
-      expect(_decryptedFile.readAsBytesSync(), File("test\\example.txt").readAsBytesSync());
+      var _decryptedFile = await fileCryptor.decrypt(
+          inputFile: "example.aes", outputFile: "res\\example.txt");
+      expect(_decryptedFile.readAsBytesSync(),
+          File("test\\example.txt").readAsBytesSync());
       await _decryptedFile.delete();
     },
   );
