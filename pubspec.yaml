@@ -1,6 +1,6 @@
 name: file_cryptor
 description: FileCryptor is for encryption and decryption files. (PDF, MP3, MP4, PNG, ...)
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/webdastur/file_cryptor
 
 environment:
